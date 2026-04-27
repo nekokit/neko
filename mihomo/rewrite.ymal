@@ -2,18 +2,17 @@
 # 如果相应分组没有筛选到对应的国家，请根据自己节点名字调整筛选关键字。
 # 没有再使用锚点，是考虑很多新手修改难度，这样新手修改某个分组更容易些。
 proxy-groups:
-  - {name: 🚀 默认代理, type: select, proxies: [🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, 🚀 全球手动, DIRECT]}
-  - {name: 🤖 AI, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, 🚀 全球手动, DIRECT]}
-  - {name: 🍀 Google, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, 🚀 全球手动, DIRECT]}
-  - {name: 🪟 Microsoft, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, 🚀 全球手动, DIRECT]}
-  - {name: 📲 Telegram, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, 🚀 全球手动, DIRECT]}
-  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, 🚀 全球手动, DIRECT]}
+  - {name: 🚀 默认代理, type: select, proxies: [🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
+  - {name: 🤖 AI, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
+  - {name: 🍀 Google, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
+  - {name: 🪟 Microsoft, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
+  - {name: 📲 Telegram, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
+  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
   - {name: 🇭🇰 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🇯🇵 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$"}
   - {name: 🇸🇬 狮城自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(港|台|韩|日|美)).)*$"}
   - {name: 🇺🇸 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: 🌍 其他自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(港|HK|(?i)Hong|日|JP|(?i)Japan|新加坡|坡|狮城|SG|Singapore|美|US|(?i)States|America|DIRECT|剩余|到期)).)*$"}
-  - {name: 🚀 全球手动, type: select, include-all: true}
 
 # 规则匹配
 rules:
