@@ -4,6 +4,7 @@
 proxy-groups:
   - {name: 🚀 默认代理, type: select, proxies: [🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
   - {name: 🤖 AI, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
+  - {name: 👨🏿‍💻 GitHub, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
   - {name: 🍀 Google, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
   - {name: 🪟 Microsoft, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
   - {name: 📲 Telegram, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 其他自动, DIRECT]}
@@ -20,6 +21,7 @@ rules:
   - RULE-SET,private_domain,DIRECT
   - RULE-SET,proxylite,🚀 默认代理
   - RULE-SET,ai_domain,🤖 AI
+  - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,google_domain,🍀 Google
   - RULE-SET,microsoft_domain,🪟 Microsoft
   - RULE-SET,apple_domain,DIRECT
@@ -44,6 +46,7 @@ rule-providers:
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   proxylite: { <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/proxy.list"}
   ai_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs" }
+  github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
