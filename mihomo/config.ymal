@@ -82,7 +82,7 @@ dns:
 # 如果相应分组没有筛选到对应的国家，请根据自己节点名字调整筛选关键字。
 # 没有再使用锚点，是考虑很多新手修改难度，这样新手修改某个分组更容易些。
 proxy-groups:
-  - {name: 🚀 默认代理, type: select, proxies: [🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇸 美国自动, 🌍 全球自动, ☑️ 手动选择, DIRECT]}
+  - {name: 🚀 默认代理, type: select, proxies: [🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇲 美国自动, 🌍 全球自动, ☑️ 手动选择, DIRECT]}
   - {name: ☑️ 手动选择, type: select, include-all: true}
   - {name: 🤖 AI, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇲 美国自动, 🌍 全球自动, ☑️ 手动选择, DIRECT]}
   - {name: 🍀 Google, type: select, proxies: [🚀 默认代理, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇸🇬 狮城自动, 🇺🇲 美国自动, 🌍 全球自动, ☑️ 手动选择, DIRECT]}
