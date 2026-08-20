@@ -20,7 +20,7 @@ rules:
   - RULE-SET,private_ip,DIRECT,no-resolve
   - RULE-SET,private_domain,DIRECT
   - RULE-SET,proxylite,🚀 默认代理
-  - RULE-SET,ai_domain,🤖 AI
+  - RULE-SET,ai_domain,🤖 OpenAI
   - RULE-SET,google_domain,🍀 Google
   - RULE-SET,microsoft_domain,🪟 Microsoft
   - RULE-SET,apple_domain,DIRECT
